@@ -20,7 +20,7 @@ window.onload = function() {
 			}
 		}
 	}
-
+	alert("??");
 	let main = new MainContoller();
 	main.run();
 	// module.exports = MainContoller;

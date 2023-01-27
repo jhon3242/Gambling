@@ -8,4 +8,4 @@ const MULTIPLE = {
 	x20 : 20
 }
 
-module.exports = MULTIPLE;
+// module.exports = MULTIPLE;

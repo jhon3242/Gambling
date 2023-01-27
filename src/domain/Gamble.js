@@ -2,8 +2,8 @@
 
 // import * as Util from "./Util.js"
 // import { MULTIPLE } from "./Const.js";
-const Util = require("./Util");
-const MULTIPLE = require("./Const");
+// const Util = require("./Util");
+// const MULTIPLE = require("./Const");
 
 class Gamble {
 
@@ -13,7 +13,7 @@ class Gamble {
 	 * 돌림판을 돌리는 기능
 	 */
 	rolling() {
-		let picked = Util.getRandomInt(0, 24);
+		let picked = getRandomInt(0, 24);
 		// console.log("picked : " + picked);
 		if (picked == 0)
 			return MULTIPLE.x20;
@@ -27,4 +27,4 @@ class Gamble {
 	}
 }
 
-module.exports = Gamble;
+// module.exports = Gamble;

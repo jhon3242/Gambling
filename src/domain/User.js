@@ -21,4 +21,4 @@ class User {
 	getAsset() {return this._asset};
 }
 
-module.exports = User;
+// module.exports = User;
