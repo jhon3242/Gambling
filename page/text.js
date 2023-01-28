@@ -1,0 +1,4 @@
+
+function fuck() {
+	alert("Fuck");
+}
