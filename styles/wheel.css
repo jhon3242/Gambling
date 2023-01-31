@@ -1,0 +1,7 @@
+#canvasContainer {
+    background-image: url(../images/wheel_back.png);
+    background-repeat: no-repeat;   /* Ensure that background does not repeat */
+    background-position: center;    /* Ensure image is centred */
+    width: 600px;                   /* Width and height should at least be the same as the canvas */
+    height: 600px;
+}

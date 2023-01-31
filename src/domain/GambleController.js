@@ -8,8 +8,6 @@ class GambleController {
 	constructor(user) {this._user = user};
 
 	start(pick, money) {
-		
-		
 		try {
 			this._user.withdraw(money);
 		} catch (err){
@@ -24,17 +22,9 @@ class GambleController {
 			this._user.deposit(money * result);
 			msg += "맞췄습니다!"
 			alert(msg);
-			// user.deposit(money * result);
-			// console.log(`입금 ${money * result} 현재 ${this._user.getAsset()}`);
-			// OutputView.printWin();
-			// OutputView.printAsset(this._user.getAsset());
 			return ;
 		}
 		msg += "틀렸습니다.!"
 		alert(msg);
-		// OutputView.printLose();
-		// OutputView.printAsset(this._user.getAsset());
 	}
 }
-
-// module.exports = GambleController;

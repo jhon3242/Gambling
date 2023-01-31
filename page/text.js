@@ -1,4 +1,0 @@
-
-function fuck() {
-	alert("Fuck");
-}
