@@ -1,7 +1,44 @@
+body {
+    -webkit-box-align: center; 
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center; /* 수직 정렬 */
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center; 
+	-ms-flex-pack: center; 
+	justify-content: center; /* 수평 정렬 */
+}
+
 #canvasContainer {
     background-image: url(../images/wheel_back.png);
     background-repeat: no-repeat;   /* Ensure that background does not repeat */
     background-position: center;    /* Ensure image is centred */
     width: 600px;                   /* Width and height should at least be the same as the canvas */
     height: 600px;
+    margin: auto;
+}
+
+#userInfo {
+    margin: auto;
+}
+
+#x1B{
+    background-color: khaki;
+}
+
+#x3B{
+    background-color:greenyellow;
+}
+
+#x5B{
+    background-color:aqua;
+}
+
+#x10B{
+    background-color :lightsalmon;
+}
+
+#x20B{
+    background-color:lightcoral;
 }
