@@ -2,6 +2,17 @@
 
 // const Gamble = require("./Gamble");
 // const OutputView = require("../io/OuputView");
+let contorller;
+
+window.onload = function() {
+	initWheel();
+	let user = new User("choi", 10000);
+	contorller = new GambleController(user);
+}
+
+function afterRolling() {
+	contorller.start(1, 1000);
+}
 
 class GambleController {
 	
@@ -15,7 +26,7 @@ class GambleController {
 			return ;
 		}
 		
-		const result = new Gamble().rolling();
+		const result = getRollingResult();
 		let msg = `룰렛 결과 : ${result}번 입니다.\n`;
 		
 		if (pick === result) {

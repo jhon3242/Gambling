@@ -6,7 +6,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	<script src='../src/domain/wheel/Winwheel.js'></script>
 	<script type="text/javascript" src='../src/domain/wheel/main.js'></script>
-	<script type="text/javascript" src='../src/domain/GambleController.js'></script>
+	<script type="text/javascript" src='../src/domain/GambleController.js' charset="utf-8"></script>
 	<script type="text/javascript" src='../src/domain/Gamble.js'></script>
 	<script type="text/javascript" src='../src/domain/Util.js'></script>
 	<script type="text/javascript" src='../src/domain/User.js'></script>
@@ -18,20 +18,13 @@
 			Canvas not supported, use another browser.
 		</canvas>
 	</div>
-	<button id="bigButton" onClick="theWheel.startAnimation(); bigButton.disabled=true;">Spin the Wheel</button>
-	<a href="javascript:void(0);" onclick="theWheel.rotationAngle=0; theWheel.draw(); bigButton.disabled=false;">Reset</a>
-	<script>
-		// let theWheel = new Winwheel({
-		// 	'numSegments' : 4,
-		// 	'segments'    :
-		// 	[
-		// 		{'fillStyle' : '#eae56f', 'text' : 'Segment 1'},
-		// 		{'fillStyle' : '#89f26e', 'text' : 'Segment 2'},
-		// 		{'fillStyle' : '#7de6ef', 'text' : 'Segment 3'},
-		// 		{'fillStyle' : '#e7706f', 'text' : 'Segment 4'}
-		// 	]
-		// });
-	</script>
+	<div>
+		<button id="bigButton" onClick="theWheel.startAnimation(); bigButton.disabled=true;">Spin the Wheel</button>
+		<a href="javascript:void(0);" onclick="theWheel.rotationAngle=0; theWheel.draw(); bigButton.disabled=false;">Reset</a>
+	</div>
+	<div>
+		<div id="asset"></div>
+	</div>
 </body>
 
 </html>

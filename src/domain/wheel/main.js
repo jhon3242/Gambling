@@ -1,7 +1,10 @@
 let theWheel;
-let user;
 
-window.onload = function() {
+// window.onload = function() {
+	
+// }
+
+function initWheel(){
 	theWheel = new Winwheel({
         'canvasId'    : 'myCanvas',
         'numSegments' : 24,
@@ -58,7 +61,6 @@ window.onload = function() {
 			'callbackFinished' : 'afterRolling()',
 		}
     });
-	user = new User("choi", 10000);
 }
 
 // function alertPrize() {
@@ -68,10 +70,13 @@ window.onload = function() {
 // 	alert("You have won " + winningSegment.text + "!");
 // }
 
-function afterRolling()
-{
+// function afterRolling()
+// {
+// 	alert(getRollingResult());
+// }
+
+function getRollingResult() {
 	let winningSegment = theWheel.getIndicatedSegment();
-	alert(winningSegment.text);
 	return winningSegment.text;
 }
 
