@@ -6,7 +6,7 @@ let contorller;
 
 window.onload = function() {
 	initWheel();
-	let user = new User("choi", 100);
+	let user = new Customer("choi");
 	contorller = new GambleController(user);
 	document.getElementById("asset").innerText =contorller.getAsset();
 }
