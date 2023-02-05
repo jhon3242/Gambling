@@ -21,5 +21,3 @@ class Customer extends User{
 
 	getAsset() {return this.#asset};
 }
-
-// module.exports = User;

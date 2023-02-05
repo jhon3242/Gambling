@@ -1,8 +1,5 @@
 let theWheel;
 
-// window.onload = function() {
-	
-// }
 
 function initWheel(){
 	theWheel = new Winwheel({
@@ -63,27 +60,7 @@ function initWheel(){
     });
 }
 
-// function alertPrize() {
-// 	let contorller = new GambleController(user);
-// 	let winningSegment = theWheel.getIndicatedSegment();
-// 	contorller.start()
-// 	alert("You have won " + winningSegment.text + "!");
-// }
-
-// function afterRolling()
-// {
-// 	alert(getRollingResult());
-// }
-
 function getRollingResult() {
 	let winningSegment = theWheel.getIndicatedSegment();
 	return winningSegment.text;
 }
-
-
-// let theWheel = new Winwheel({
-// 	'canvasId'    : 'myCanvas',
-// 	'numSegments' : 12,
-// 	'fillStyle'   : '#e7706f',
-// 	'lineWidth'   : 3
-// });
