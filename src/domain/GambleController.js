@@ -23,12 +23,12 @@ function afterRolling() {
 	total += contorller.start(MULTIPLE.x20, document.getElementById("x20B").value, result);
 	alert(`배팅 결과 : ${total >= 0 ? `+${total}` : total}`);
 	document.getElementById("asset").innerText =contorller.getAsset();
+	resetRolling();
 }
 
 function resetRolling() {
 	theWheel.rotationAngle=0; 
 	theWheel.draw();
-	document.getElementById("bigButton").disabled = false;
 	document.getElementById("x1B").value = null;
 	document.getElementById("x3B").value = null;
 	document.getElementById("x5B").value = null;
