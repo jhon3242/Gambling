@@ -11,6 +11,7 @@ window.onload = function() {
 	document.getElementById("asset").innerText =contorller.getAsset();
 }
 
+
 function afterRolling() {
 	let result = getRollingResult();
 	let total = 0;
